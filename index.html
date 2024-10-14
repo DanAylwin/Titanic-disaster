@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Iceberg Dodger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="main-menu" class="screen">
+            <h1>Titanic Iceberg Dodger</h1>
+            <button id="start-button">Start Game</button>
+            <button id="quit-button">Quit</button>
+        </div>
+        <div id="game-screen" class="screen hidden">
+            <canvas id="game-canvas" width="800" height="600"></canvas>
+            <div id="ui">
+                <div id="hearts"></div>
+                <div id="distance">Distance: 0 km</div>
+                <button id="pause-button">Pause</button>
+            </div>
+        </div>
+        <div id="pause-menu" class="screen hidden">
+            <h2>Paused</h2>
+            <button id="resume-button">Resume</button>
+            <button id="main-menu-button">Main Menu</button>
+        </div>
+        <div id="game-over-screen" class="screen hidden">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="restart-button">Restart</button>
+            <button id="game-over-main-menu-button">Main Menu</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

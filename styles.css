@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #F4D03F;
+    color: #2C3E50;
+}
+
+#game-container {
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    border: 8px solid #2C3E50;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 208, 63, 0.9);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #C0392B;
+    transform: scale(1.05);
+}
+
+#game-canvas {
+    background-color: #3498DB;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    font-size: 24px;
+}
+
+#hearts {
+    color: #E74C3C;
+}
+
+#distance {
+    color: #2C3E50;
+}
+
+#pause-button {
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+h1, h2 {
+    color: #2C3E50;
+    text-shadow: 2px 2px #F4D03F;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+}
